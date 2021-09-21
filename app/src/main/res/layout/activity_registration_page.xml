@@ -7,4 +7,14 @@
     android:background="#000000"
     tools:context=".RegistrationPage">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_upper"
+        android:layout_width="0dp"
+        android:layout_height="92dp"
+        android:background="@color/purple_200"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

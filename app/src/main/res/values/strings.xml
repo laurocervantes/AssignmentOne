@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">AssignmentOne</string>
     <string name="create_account">CREATE AN ACCOUNT</string>
+    <string name="create_an_account_to_access">create an account to access</string>
+    <string name="car_health_updates">Car health updates</string>
+    <string name="greenflag_customers_can">GreenFlag customers can</string>
+    <string name="policy_information">Policy Information</string>
+    <string name="request_a_rescue_online">Request a rescue online</string>
+    <string name="todo">TODO</string>
 </resources>
