@@ -8,28 +8,18 @@
     tools:context=".RegistrationPage">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="144dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="394dp"
+        android:layout_height="331dp"
         android:background="#000000"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307"
         tools:context=".RegistrationPage">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_upper"
-            android:layout_width="415dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="4dp"
-            android:background="@color/black"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView7"
@@ -65,15 +55,16 @@
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="200dp"
+            android:layout_width="205dp"
             android:layout_height="40dp"
             android:fontFamily="sans-serif-light"
             android:gravity="bottom|center"
             android:text="@string/create_password"
-            android:textAlignment="center"
+            android:textAlignment="textEnd"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:ignore="RtlCompat" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/text_input_password"
@@ -96,15 +87,16 @@
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="200dp"
+            android:layout_width="205dp"
             android:layout_height="40dp"
             android:fontFamily="sans-serif-light"
             android:gravity="bottom|center"
             android:text="@string/repeat_password"
-            android:textAlignment="center"
+            android:textAlignment="textEnd"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:ignore="RtlCompat" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/repeat_password"
@@ -124,25 +116,6 @@
                 tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="397dp"
-            android:layout_height="150dp"
-            android:layout_weight="0"
-            android:fontFamily="sans-serif-light"
-            android:gravity="bottom"
-            android:text="@string/final_legend"
-            android:textAlignment="gravity"
-            android:textAllCaps="false"
-            android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:textColor="#FFFFFF"
-            android:textSize="19sp" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
     </LinearLayout>
 
     <ImageButton
@@ -159,8 +132,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="267dp"
-        android:layout_height="58dp"
+        android:layout_width="266dp"
+        android:layout_height="52dp"
         android:layout_marginTop="21dp"
         android:clickable="true"
         android:focusable="true"
@@ -168,13 +141,83 @@
         android:text="@string/next_string"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageButton3"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints,SmallSp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="379dp"
+        android:layout_height="86dp"
+        android:layout_weight="0"
+        android:fontFamily="sans-serif-light"
+        android:gravity="top"
+        android:text="@string/final_legend"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.885" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_upper"
+        android:layout_width="415dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="283dp"
+        android:layout_height="40dp"
+        android:text="@string/create_an_account"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_upper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_upper"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_upper"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="36dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:soundEffectsEnabled="true"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.623"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_upper"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screen_shot_2021_09_22_at_10_09_57_pm" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="442dp"
+        android:layout_height="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_upper"
+        app:srcCompat="@android:drawable/divider_horizontal_dark" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
