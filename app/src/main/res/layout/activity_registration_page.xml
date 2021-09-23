@@ -48,7 +48,6 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:background="@color/white"
-                android:gravity="center"
                 android:inputType="textEmailAddress"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -207,7 +206,8 @@
         app:layout_constraintHorizontal_bias="0.623"
         app:layout_constraintStart_toStartOf="@+id/toolbar_upper"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/screen_shot_2021_09_22_at_10_09_57_pm" />
+        app:srcCompat="@drawable/screen_shot_2021_09_22_at_10_09_57_pm"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton17"
@@ -217,7 +217,8 @@
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_upper"
-        app:srcCompat="@android:drawable/divider_horizontal_dark" />
+        app:srcCompat="@android:drawable/divider_horizontal_dark"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
