@@ -7,4 +7,23 @@
     <string name="policy_information">Policy Information</string>
     <string name="request_a_rescue_online">Request a rescue online</string>
     <string name="todo">TODO</string>
+    <string name="enter_email_id">Enter Email id</string>
+    <string name="enter_your_email_address">Enter your Email Address</string>
+    <string name="enter_password">See criteria below</string>
+    <string name="re_enter_your_password">Re-Enter your Password</string>
+    <string name="email_address_reg">Email address</string>
+    <string name="create_password">Create Password</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="final_legend">Your password should have a minimum of 8 characters and contain at least one number, one upper case and one lower case letter. You can use special characters</string>
+    <string name="next_text">Next</string>
+    <string name="title_activity_mua">MuaActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="next_string">Next</string>
 </resources>
