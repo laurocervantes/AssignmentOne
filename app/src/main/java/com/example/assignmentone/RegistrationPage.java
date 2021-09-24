@@ -62,6 +62,7 @@ public class RegistrationPage extends AppCompatActivity {
                 soundTwo.start();
                 Toast.makeText(RegistrationPage.this,"THANKS FOR REGISTERING",
                         Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(RegistrationPage.this,ActivityThree.class));
             }
         });
     }
