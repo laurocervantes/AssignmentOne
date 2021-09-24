@@ -13,6 +13,7 @@ public class ActivityThree extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_three);
 
+        // This do not need further explanation I feel relieved somewhat lol
         MediaPlayer soundThree = MediaPlayer.create(ActivityThree.this,
                 R.raw.halellujah);
         soundThree.start();
