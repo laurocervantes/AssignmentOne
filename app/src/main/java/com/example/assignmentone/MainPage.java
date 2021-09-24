@@ -28,7 +28,7 @@ public class MainPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // If Text "Create Account" is clicked sound will get activated
-                // Lower up your volume speakers
+                // Rise up your volume speakers
                 sound.start();
                 // At click the Intend takes you to RegistrationPage (Second Activity)
                 startActivity(new Intent(MainPage.this, RegistrationPage.class));
@@ -43,7 +43,7 @@ public class MainPage extends AppCompatActivity {
             public void onClick(View view) {
 
                 // If Text "Create Account" is clicked sound will get activated
-                // Lower up your Volume speakers
+                // Rise up your Volume speakers
                 sound.start();
                 // At click the Intend takes you to RegistrationPage (Second Activity)
                 startActivity(new Intent(MainPage.this, RegistrationPage.class));
