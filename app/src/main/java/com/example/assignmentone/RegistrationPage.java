@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
@@ -52,10 +53,13 @@ public class RegistrationPage extends AppCompatActivity {
                 }
             } ,5000);
 
+        MediaPlayer soundTwo = MediaPlayer.create(RegistrationPage.this, R.raw.bun);
+
         textView = (TextView) findViewById(R.id.textView28);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                soundTwo.start();
                 Toast.makeText(RegistrationPage.this,"THANKS FOR REGISTERING",
                         Toast.LENGTH_SHORT).show();
             }

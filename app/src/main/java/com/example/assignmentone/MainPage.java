@@ -1,6 +1,7 @@
 package com.example.assignmentone;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -14,11 +15,13 @@ public class MainPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
+        MediaPlayer sound = MediaPlayer.create(MainPage.this, R.raw.sound);
 
         TextView textClick = (TextView) findViewById(R.id.textView);
         textClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                sound.start();
                 startActivity(new Intent(MainPage.this, RegistrationPage.class));
             }
         });
@@ -30,6 +33,6 @@ public class MainPage extends AppCompatActivity {
                 startActivity(new Intent(MainPage.this, RegistrationPage.class));
             }
         });
-
     }
+
 }
